@@ -9,6 +9,11 @@ const config = {
   backgroundColor: '#181820',
   parent: 'app',
   scene: [GameScene],
+  scale: {
+    mode: Phaser.Scale.FIT,           // Scale to fit screen while preserving aspect ratio
+    autoCenter: Phaser.Scale.CENTER_BOTH, // Center canvas horizontally and vertically
+  },
 };
+
 
 new Phaser.Game(config);
